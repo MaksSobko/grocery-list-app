@@ -1,3 +1,17 @@
 .form {
-  text-align: center;
+  @extend %styleWrap;
+
+  .label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 104px;
+  }
+
+  .grocery-input-field {
+    background-color: rgb(242, 221, 198);
+    font-size: 40px;
+    margin: 10px;
+    width: 70%;
+  }
 }

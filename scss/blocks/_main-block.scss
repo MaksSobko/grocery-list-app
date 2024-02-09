@@ -1,0 +1,16 @@
+.main {
+  padding-bottom: 170px;
+}
+
+.grocery-list__item {
+  @extend %styleWrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 35px;
+  padding-left: 30px;
+}
+
+.delete__button {
+  margin-right: 20px;
+}

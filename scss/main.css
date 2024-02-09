@@ -9,16 +9,6 @@ li {
   list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-size: inherit;
-}
-
 input,
 button {
   border: none;
@@ -36,22 +26,101 @@ button:focus {
   outline: none;
 }
 
-.container {
-  max-width: 900px;
-  margin: 20px auto;
-  background-color: darkcyan;
-  border-radius: 10px;
+body {
+  font-family: "Literata", serif;
 }
 
+.grocery-list__item, .form {
+  height: 104px;
+  background-color: rgb(242, 221, 198);
+  box-shadow: 0px 0px 5px gray;
+  margin: 5px;
+}
+
+.header {
+  background-color: rgb(242, 221, 198);
+  margin: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 0px 5px gray;
+}
 .header .header__title {
   text-align: center;
+  font-size: 70px;
 }
 
 .button {
-  display: inline-block;
-  background-color: green;
+  background-color: rgb(255, 99, 71);
+  font-size: 15px;
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+}
+.button:hover {
+  background-color: rgb(210, 105, 30);
 }
 
-.form {
-  text-align: center;
+.form .label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 104px;
+}
+.form .grocery-input-field {
+  background-color: rgb(242, 221, 198);
+  font-size: 40px;
+  margin: 10px;
+  width: 70%;
+}
+
+.main {
+  padding-bottom: 170px;
+}
+
+.grocery-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 35px;
+  padding-left: 30px;
+}
+
+.delete__button {
+  margin-right: 20px;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 104px;
+  width: 98.9%;
+  background-color: rgb(242, 221, 198);
+  box-shadow: 0px 0px 5px gray;
+  bottom: 5px;
+  left: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.footer .footer-text {
+  font-size: 35px;
+}
+
+.container {
+  position: relative;
+  max-width: 900px;
+  margin: 5px auto;
+  background-color: rgb(127, 199, 255);
+  border-radius: 10px;
+  overflow: auto;
+  min-height: 100vh;
+}
+
+.delete-all__button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 114px;
+  margin-top: 5px;
 }/*# sourceMappingURL=main.css.map */

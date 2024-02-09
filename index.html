@@ -5,26 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grocery list</title>
     <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200;0,7..72,300;0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,200;1,7..72,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <header class="header">
+      <div class="header">
         <h1 class="header__title">Grocery list</h1>
-      </header>
+      </div>
       <form class="form">
-        <label
+        <label for="input" class="label"
           ><input
+            id="input"
             type="text"
             class="grocery-input-field"
-            placeholder="Waht would you like to buy?"
-        /></label>
-        <button class="button add-button">ADD</button>
+            placeholder="What would you like to buy?"
+          />
+          <button class="button add__button">ADD</button>
+        </label>
       </form>
       <main class="main">
         <ul class="grocery-list">
           <!-- <li class="grocery-list__item">Milk 1 litr</li> -->
         </ul>
-        <button class="button button-del-all">Delet all</button>
+        <button class="button delete-all__button">Delet all</button>
       </main>
       <footer class="footer">
         <p class="footer-text">Enjoy your shopping</p>

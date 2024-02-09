@@ -1,6 +1,12 @@
-.container {
-  max-width: 900px;
-  margin: 20px auto;
-  background-color: darkcyan;
-  border-radius: 10px;
+body {
+  font-family: "Literata", serif;
+}
+
+$mainColor: rgb(242, 221, 198);
+
+%styleWrap {
+  height: 104px;
+  background-color: $mainColor;
+  box-shadow: 0px 0px 5px gray;
+  margin: 5px;
 }

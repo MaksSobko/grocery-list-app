@@ -1,4 +1,11 @@
 .button {
-  display: inline-block;
-  background-color: green;
+  background-color: rgb(255, 99, 71);
+  font-size: 15px;
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: rgb(210, 105, 30);
+  }
 }

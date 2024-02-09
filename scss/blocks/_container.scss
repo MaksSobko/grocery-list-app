@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  max-width: 900px;
+  margin: 5px auto;
+  background-color: rgb(127, 199, 255);
+  border-radius: 10px;
+  overflow: auto;
+  min-height: 100vh;
+}
+
+.delete-all__button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 114px;
+  margin-top: 5px;
+}
